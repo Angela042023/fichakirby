@@ -53,3 +53,96 @@
 .espacio {
     padding-bottom: 100px;
 }
+
+/* arcos INICIO */
+.fondo{
+    height: 300px;
+    width: 100%;
+    background: white; 
+    overflow: hidden;
+}
+.comiendo {
+    position: relative;
+    z-index: 1;
+    animation: comiendo 4s infinite;
+}
+.volando {
+    position: relative;
+    z-index: 2;
+    animation: volando 4s infinite;
+}
+.victima  {
+    position: relative;
+    z-index: 3;
+    animation: flotar 4s infinite;
+}
+
+
+@keyframes comiendo {
+    0% {
+        left: 33%;top: 13%; width: 25%; height: 30%; opacity: 0%;
+    }
+    50% {
+        left: 33%;top: 13%; width: 25%; height: 30%; opacity: 0%;
+    }
+    51% {
+        left: 33%;top: 13%; width: 25%; height: 30%; opacity: 100%;
+    }
+    59% {
+        left: 33%;top: 13%; width: 25%; height: 30%; opacity: 100%;
+    }
+    60% {
+        left: 33%;top: 13%; width: 25%; height: 30%; opacity: 0%;
+    }
+    100% {
+        left: 33%;top: 13%; width: 25%; height: 30%; opacity: 0%;
+    }
+}
+
+@keyframes volando {
+    0% {
+        left: 0%;top: 30%; rotate:y -180deg; width: 20%; height: 34%;
+    }
+    25% {
+        left: 25%;top: 60%; rotate:y -180deg; width: 20%; height: 34%;
+    }
+    50% {
+        left: 50%;top: 10%; rotate:y -180deg; width: 20%; height: 34%; opacity: 100%;
+    }
+    51% {
+        left: 50%;top: 10%; rotate:y -180deg; width: 20%; height: 34%; opacity: 0%;
+    }
+    59% {
+        left: 50%;top: 10%; rotate:y -180deg; width: 20%; height: 34%; opacity: 0%;
+    }
+    60% {
+        left: 50%;top: 10%; rotate:y -180deg; width: 20%; height: 34%; opacity: 100%;
+    }
+    75% {
+        left: 75%;top: 60%; rotate:y -180deg; width: 20%; height: 34%;
+    }
+    100% {
+        left: 100%;top: 30%; rotate:y -180deg; width: 20%; height: 34%;
+    }
+}
+
+@keyframes flotar {
+    0% {
+        left: 15%;top: 20%; width: 30%; height: 30%; opacity: 100%;
+    }
+    
+    25% {
+        left: 15%;top: 60%; width: 30%; height: 30%; opacity: 100%;
+    }
+    50% {
+        left: 15%;top: 15%; width: 30%; height: 30%; opacity: 100%;
+    }
+    55% {
+        left: 20%;top: 15%; width: 0%; height: 0%; opacity: 0%;
+    }
+    100% {
+        left: 15%;top: 20%; width: 0%; height: 0%; opacity: 0%;
+    }
+
+}
+/* arcos FIN */
